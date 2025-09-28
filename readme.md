@@ -140,6 +140,12 @@ Output Files:
 - partnership_summary.csv - Aggregated partnership statistics
 - cooperation_timeline.csv - System evolution metrics
 
+## Experiment 3: Visualisations
+
+File: mas_experiment_3_visualisations.ipynb
+
+This file creates various visualisations to analyse the output of the MAS generated in experiment 3.
+
 ## Key Innovations:
 
 Reputation-Enhanced States: [base_observation, partner_reputation]
