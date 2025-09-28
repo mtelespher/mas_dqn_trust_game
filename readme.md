@@ -1,4 +1,4 @@
-# Multi-Agent Trust Game with Global Reputation Systems 
+# Exploring the Emergence of Trust between Agents using Deep Q-learning in a Multi-Agent System 
 
 ## Objectives
 
