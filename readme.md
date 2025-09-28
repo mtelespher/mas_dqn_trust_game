@@ -1,4 +1,4 @@
-# Exploring the Emergence of Trust between Agents using Deep Q-learning in a Multi-Agent System 
+# From Fixed Pairs to Dynamic Networks: Trust Emergence in Multi-Agent Deep Q-Learning
 
 
 ![MAS Network](network_image.jpg)
