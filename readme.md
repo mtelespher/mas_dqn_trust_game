@@ -175,9 +175,9 @@ Technical Requirements
 
 ## Key Findings
 
-Experiment 1: Replicates Wu et al. [1] cooperation levels in PyTorch
-Experiment 2: Cooperation emerges despite random pairing through partner-specific learning
-Experiment 3: Reputation systems sustain cooperation, reputation is positive correlated with higher rates of cooperation and trustee agent selection. 
+- Experiment 1: Replicates Wu et al. [1] cooperation levels in PyTorch
+- Experiment 2: Cooperation emerges despite random pairing through partner-specific learning
+- Experiment 3: Reputation systems sustain cooperation, reputation is positive correlated with higher rates of cooperation and trustee agent selection. 
 
 
 ## Related Work
