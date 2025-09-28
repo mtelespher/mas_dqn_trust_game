@@ -97,10 +97,10 @@ Individual agent memory files
 
 ### Configuration:
 
-Agents: 10 fixed trustor-trustee pairs
-Training: 350k steps per pair with sequential training
-State Spaces: Trustor [last_sent, last_received], Trustee [amount_received]
-Objective: Demonstrate cooperation emergence matches literature benchmarks
+- Agents: 10 fixed trustor-trustee pairs
+- Training: 350k steps per pair with sequential training
+- State Spaces: Trustor [last_sent, last_received], Trustee [amount_received]
+- Objective: Demonstrate cooperation emergence matches literature benchmarks
 
 ## Experiment 2: Random Pairing with Partner-Specific Networks
 File: trust_game_mas_experiment_2.py
@@ -114,10 +114,10 @@ Extends to multi-agent environment with dynamic partner selection while maintain
 
 ### Configuration:
 
-Agents: 10 trustors (IDs 0-9), 10 trustees (IDs 12-21)
-Training: 30 - 43M steps with random pairing each round, to replicate the 300k training steps required for cooperation in Wu et al. Trust Game.
-Architecture: Each agent maintains separate DQN for every potential partner (200 total networks)
-Innovation: Partner-specific epsilon decay and experience replay memories
+- Agents: 10 trustors (IDs 0-9), 10 trustees (IDs 12-21)
+- Training: 30 - 43M steps with random pairing each round, to replicate the 300k training steps required for cooperation in Wu et al. Trust Game.
+- Architecture: Each agent maintains separate DQN for every potential partner (200 total networks)
+- Innovation: Partner-specific epsilon decay and experience replay memories
 
 Partnership-specific learning enables relationship-dependent strategies
 Random pairing tests cooperation emergence without fixed relationships
@@ -128,10 +128,10 @@ File: trust_game_mas_experiment_3.py
 
 Configuration:
 
-Agents: 20 trustors (IDs 0-19), 20 trustees (IDs 20-39)
-Training: 10M steps with reputation-weighted partner selection
-Reputation: Modified Ren-Zeng system with 0-10 scale, cooperation-only scoring
-Selection: Weighted probability based on reputation 
+- Agents: 20 trustors (IDs 0-19), 20 trustees (IDs 20-39)
+- Training: 10M steps with reputation-weighted partner selection
+- Reputation: Modified Ren-Zeng system with 0-10 scale, cooperation-only scoring
+- Selection: Weighted probability based on reputation 
 
 Output Files:
 
