@@ -1,5 +1,8 @@
 # Exploring the Emergence of Trust between Agents using Deep Q-learning in a Multi-Agent System 
 
+
+![MAS Network](network_image.jpg)
+
 ## Objectives
 
 This codebase implements a progressive series of experiments extending the classical game theoretical framework called the 'Trust Game' to multi-agent environments. Each artificial agent in this environment learns through interactions via the reinforcement learning technique Deep Q-learning.
