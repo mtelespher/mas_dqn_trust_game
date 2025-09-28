@@ -163,11 +163,11 @@ Random pairing with memory preserves cooperation incentives
 Reputation-based selection amplifies cooperation differences
 Technical Requirements
 
-# System Requirements:
+## System Requirements:
 
-RAM: 16GB minimum, 32GB recommended for Experiment 3
-GPU: CUDA-capable GPU with 8GB+ VRAM (optional but reduces training time 10x)
-Storage: 5GB free space for results and model checkpoints
+- RAM: 16GB minimum, 32GB recommended for Experiment 3
+- GPU: CUDA-capable GPU with 8GB+ VRAM (optional but reduces training time 10x)
+- Storage: 5GB free space for results and model checkpoints
 
 ### Reproduction Notes
  
