@@ -146,18 +146,10 @@ File: mas_experiment_3_visualisations.ipynb
 
 This file creates various visualisations to analyse the output of the MAS generated in experiment 3.
 
-## Key Innovations:
-
-Reputation-Enhanced States: [base_observation, partner_reputation]
-Wealth Tracking: Persistent accumulation from zero initial endowment
-Cooperation Scoring: Gaussian bell curve rewarding optimal return rates (~50%)
-Social Stratification: High-reputation agents preferentially selected
-
-git clone [repository-url]
-cd multi-agent-trust-game
 
 ## Install dependencies
-pip install -r requirements.txt
+- git clone [repository-url]
+- pip install -r requirements.txt
 
 ## Verify CUDA (optional but recommended)
 python -c "import torch; print(torch.cuda.is_available())"
