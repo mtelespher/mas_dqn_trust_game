@@ -6,7 +6,7 @@ This codebase implements a progressive series of experiments extending the class
 
 The objective of the research behind this codebase, was to investigate the emergence of cooperative behaviour or 'trust' norms between agents in this multi-agent system. Existing literature [1], indicated fixed pairs of agents that learn through the Deep Q-learning technique constructed in TensorFlow generate cooperative norms - when trained for ~300k steps. The rates of cooperation are similar to those of human participants [3].
 
-A major drawback of the original paper was that when agents were paired randomly during training, cooperation collapsed to defection, therefore this research aimed to expand upon the original paper by implementing random pairing of agents at the start of each round and increasing the number of agents interacting to a multi-agent system, including a reputation mechanism which was adapted by another paper which successfully indicated cooperation in a multi-agent reinforcement learning game theory applciation.
+A major drawback of the original paper was that when agents were paired randomly during training, cooperation collapsed to defection. This research aimed to expand upon the original paper by implementing random pairing of agents at the start of each round and increasing the number of agents interacting to a multi-agent system, including a reputation mechanism which was adapted by another paper which successfully indicated cooperation in a multi-agent reinforcement learning game theory applciation.
 
 ## The Trust Game
 
@@ -50,8 +50,6 @@ Deep Q-Learning combines Q-learning reinforcement learning with deep neural netw
 - **Target Networks:** Separate network for calculating target Q-values (prevents moving target problem)
 - **Epsilon Decay:** Gradually reduce exploration as agent learns optimal policies
 
-**Trust Game Application:**
-
 **State Representations:**
 - Trustors: [previous_sent, previous_received] → Neural network → Q-values for send amounts (0-10)
 - Trustees: [amount_received] → Neural network → Q-values for return amounts (0-30)
@@ -91,7 +89,7 @@ Replicates Wu et al. (2023) methodology using PyTorch instead of TensorFlow to v
 
 ### Output Files:
 
-baseline_training_analysis.png - Training curves and final results
+- baseline_training_analysis.png - Training curves and final results
 Individual agent memory files
 
 ### Configuration:
@@ -107,12 +105,11 @@ Extends to multi-agent environment with dynamic partner selection while maintain
 
 ### Output Files:
 
-partnership_smooth_curves.png - Individual partnership learning
-population_smooth_curves.png - System-wide trends
-experiment_summary.pkl - Complete results data
+- partnership_smooth_curves.png - Individual partnership learning
+- population_smooth_curves.png - System-wide trends
+- experiment_summary.pkl - Complete results data
 
 ### Configuration:
-
 
 Agents: 10 trustors (IDs 0-9), 10 trustees (IDs 12-21)
 Training: 30 - 43M steps with random pairing each round, to replicate the 300k training steps required for cooperation in Wu et al. Trust Game.
@@ -135,10 +132,10 @@ Selection: Weighted probability based on reputation
 
 Output Files:
 
-agent_data.csv - Final agent states (wealth, reputation)
-partnership_interactions.csv - All transactions with timestamps
-partnership_summary.csv - Aggregated partnership statistics
-cooperation_timeline.csv - System evolution metrics
+- agent_data.csv - Final agent states (wealth, reputation)
+- partnership_interactions.csv - All transactions with timestamps
+- partnership_summary.csv - Aggregated partnership statistics
+- cooperation_timeline.csv - System evolution metrics
 
 ## Key Innovations:
 
@@ -150,10 +147,10 @@ Social Stratification: High-reputation agents preferentially selected
 git clone [repository-url]
 cd multi-agent-trust-game
 
-# Install dependencies
+## Install dependencies
 pip install -r requirements.txt
 
-# Verify CUDA (optional but recommended)
+## Verify CUDA (optional but recommended)
 python -c "import torch; print(torch.cuda.is_available())"
 
 ## Learning Dynamics
@@ -183,8 +180,7 @@ Experiment 3: Reputation systems sustain cooperation, reputation is positive cor
 
 
 ## Related Work
-This implementation extends:
 
-1 - Wu et al. (2023): "Building Socially Intelligent AI Systems: Evidence from the Trust Game Using Artificial Agents with Deep Learning" - Reference paper conducting Trust Game experiments with Deep Q-learning fixed agent pairs.
-2 - Ren & Zeng (2024): "Reputation-Based Interaction Promotes Cooperation With Reinforcement Learning" - Reference paper containing a reputation system which was adapted for this work.
-3 - Berg et al. (1995): Original Trust Game experimental framework - Original Trust Game formulation.
+- 1 - Wu et al. (2023): "Building Socially Intelligent AI Systems: Evidence from the Trust Game Using Artificial Agents with Deep Learning" - Reference paper conducting Trust Game experiments with Deep Q-learning fixed agent pairs.
+- 2 - Ren & Zeng (2024): "Reputation-Based Interaction Promotes Cooperation With Reinforcement Learning" - Reference paper containing a reputation system which was adapted for this work.
+- 3 - Berg et al. (1995): Original Trust Game experimental framework - Original Trust Game formulation.
